@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -yq \
     python3-all \
     python3-pip \
     python3-nose \
+    python3-mock \
     libpq-dev \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
