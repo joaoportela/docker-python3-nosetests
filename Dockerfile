@@ -10,6 +10,6 @@ RUN apt-get update && apt-get install -yq \
     libpq-dev \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
-RUN pip install teamcity-messages
+RUN pip3 install teamcity-messages
 ENV PYTHONIOENCODING utf-8
 WORKDIR /code
