@@ -2,7 +2,7 @@
 FROM ubuntu:15.04
 MAINTAINER JP <jportela@abyssal.eu>
 ENV LANG en_US.utf8
-RUN apt-get update && apt-get install -yq \
+RUN apt-get update && apt-get install --no-install-recommends -yq \
     python3-all \
     python3-pip \
     python3-nose \
