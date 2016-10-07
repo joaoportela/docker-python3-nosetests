@@ -1,5 +1,5 @@
 # https://docs.docker.com/engine/articles/dockerfile_best-practices/ 
-FROM ubuntu:15.04
+FROM ubuntu:16.04
 MAINTAINER JP <jportela@abyssal.eu>
 ENV LANG en_US.utf8
 RUN apt-get update && apt-get install --no-install-recommends -yq \
