@@ -10,8 +10,6 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
     python3-all \
     python3-setuptools \
     python3-pip \
-    python3-nose \
-    python3-mock \
 # using pip, psycopg2 has a lot of dependencies and too long to install, prefer apt.
     python3-psycopg2 \
 && apt-get clean \
