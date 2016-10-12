@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
     python3-pip \
 # using pip, psycopg2 has a lot of dependencies and too long to install, prefer apt.
     python3-psycopg2 \
+# so that we can call nosetests command.
+    python3-nose \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
