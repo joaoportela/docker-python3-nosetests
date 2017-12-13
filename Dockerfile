@@ -2,6 +2,9 @@
 FROM ubuntu:16.04
 MAINTAINER JP <jportela@abyssal.eu>
 
+# Install locales so we can use locale-gen command.
+RUN apt-get update && apt-get install -y locales
+
 # LOCALE/LANG settings. Having this properly setup, avoids multiple installation issues.
 RUN locale-gen en_US.UTF-8
 ENV LANG="en_US.UTF-8" LANGUAGE="en_US:en" LC_ALL="en_US.UTF-8" PYTHONIOENCODING="utf-8"
