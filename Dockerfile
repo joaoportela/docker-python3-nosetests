@@ -20,6 +20,6 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install teamcity-messages
+RUN pip3 install --upgrade pip && pip3 install teamcity-messages
 
 WORKDIR /code
