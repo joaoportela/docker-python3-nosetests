@@ -1,5 +1,5 @@
 # https://docs.docker.com/engine/articles/dockerfile_best-practices/ 
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER JP <jportela@abyssal.eu>
 
 # Install locales so we can use locale-gen command.
